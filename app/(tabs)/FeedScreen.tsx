@@ -1,5 +1,5 @@
-import { View, Text, Button } from "react-native";
 import { useRouter } from "expo-router";
+import { Button, Text, View } from "react-native";
 
 export default function FeedScreen() {
   const router = useRouter();
@@ -9,7 +9,7 @@ export default function FeedScreen() {
       <Text className="text-xl font-bold">Feed Screen</Text>
       <Button
         title="Go to Post Details"
-        onPress={() => router.push("/home/PostDetailsScreen")}
+        onPress={() => router.push("login")}
       />
     </View>
   );
