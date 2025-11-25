@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
-import { Redirect } from "expo-router";
+import { Redirect, router } from "expo-router";
 import { useAuth } from "../../providers/AuthProvider";
 
 export default function LoginScreen() {
@@ -79,7 +79,7 @@ export default function LoginScreen() {
         className="mt-4"
         onPress={() => {
           // This will be replaced with navigation later
-          console.log("Go to Register");
+          router.replace("register")
         }}
       >
         <Text className="text-center text-blue-600">
