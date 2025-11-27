@@ -11,7 +11,7 @@ type ORSLatLng = {
 export async function getRoute(
   start: ORSLatLng,
   end: ORSLatLng,
-  apiKey: string
+  apiKey: string = "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6IjlkODFjMjE5NDhjNzQzZTk5ZmIxNTlkZjBjOGIxZjNjIiwiaCI6Im11cm11cjY0In0="
 ): Promise<LatLng[]> {
   const url = `https://api.openrouteservice.org/v2/directions/driving-car?api_key=${apiKey}&start=${start.lng},${start.lat}&end=${end.lng},${end.lat}`;
 
